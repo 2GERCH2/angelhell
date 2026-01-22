@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Angel Hell — Links</title>
+  <style>
+    :root {
+      --glass-bg: rgba(255, 255, 255, 0.18);
+      --glass-border: rgba(255, 255, 255, 0.35);
+      --text-main: #ffffff;
+      --accent: #9df3ff;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", sans-serif;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: radial-gradient(1200px 600px at 10% 10%, #5b9dff55, transparent 60%),
+                  radial-gradient(800px 500px at 90% 20%, #b86bff55, transparent 60%),
+                  radial-gradient(700px 700px at 50% 90%, #00ffd555, transparent 60%),
+                  #0b0e14;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-main);
+    }
+
+    .container {
+      width: 100%;
+      max-width: 420px;
+      padding: 28px 22px 32px;
+      backdrop-filter: blur(18px) saturate(140%);
+      -webkit-backdrop-filter: blur(18px) saturate(140%);
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: 28px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+    }
+
+    .profile {
+      text-align: center;
+      margin-bottom: 26px;
+    }
+
+    .avatar {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      margin: 0 auto 14px;
+      background: linear-gradient(135deg, #9df3ff, #c77dff);
+      padding: 3px;
+    }
+
+    .avatar-inner {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: #111;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      font-weight: 600;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 26px;
+      letter-spacing: 0.5px;
+    }
+
+    .subtitle {
+      margin-top: 6px;
+      font-size: 14px;
+      opacity: 0.8;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .link-btn {
+      text-decoration: none;
+      color: var(--text-main);
+      padding: 16px 18px;
+      border-radius: 18px;
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      background: rgba(255,255,255,0.16);
+      border: 1px solid rgba(255,255,255,0.32);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .link-btn:hover {
+      transform: translateY(-2px);
+      background: rgba(255,255,255,0.24);
+    }
+
+    .platform {
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .arrow {
+      opacity: 0.7;
+    }
+
+    footer {
+      margin-top: 26px;
+      text-align: center;
+      font-size: 12px;
+      opacity: 0.6;
+    }
+
+    @media (max-width: 420px) {
+      .container {
+        border-radius: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="profile">
+      <div class="avatar">
+        <img src="avatar.jpg" alt="Angel Hell avatar" style="width:100%;height:100%;border-radius:50%;object-fit:cover;" />
+      </div>
+      </div>
+      <h1>Angel Hell</h1>
+      <div class="subtitle">Music Artist</div>
+    </div>
+
+    <div class="links">
+      <a class="link-btn" href="https://music.yandex.ru/artist/22027716" target="_blank">
+        <span class="platform">Яндекс Музыка</span>
+        <span class="arrow">→</span>
+      </a>
+
+      <a class="link-btn" href="https://vk.com/artist/angelhell" target="_blank">
+        <span class="platform">VK Музыка</span>
+        <span class="arrow">→</span>
+      </a>
+
+      <a class="link-btn" href="https://open.spotify.com/artist/0hG8pPiP4ElwWkMAY2V5rD" target="_blank">
+        <span class="platform">Spotify</span>
+        <span class="arrow">→</span>
+      </a>
+
+      <a class="link-btn" href="https://www.youtube.com/@angelhell468" target="_blank">
+        <span class="platform">YouTube</span>
+        <span class="arrow">→</span>
+      </a>
+
+      <a class="link-btn" href="https://www.instagram.com/ange1hell?igsh=dDN2OWxuamZxbm03" target="_blank">
+        <span class="platform">Instagram</span>
+        <span class="arrow">→</span>
+      </a>
+    </div>
+
+    <footer>
+      © Angel Hell
+    </footer>
+  </div>
+</body>
+</html>
