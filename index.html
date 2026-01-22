@@ -35,15 +35,11 @@
       width: 100%;
       max-width: 1600px;
       padding: 32px;
-      display: flex;
-      justify-content: center;
     }
 
     /* ===== MOBILE DEFAULT ===== */
 
     .layout {
-      width: 100%;
-      max-width: 1200px;
       display: block;
     }
 
@@ -53,7 +49,7 @@
       border: 1px solid var(--border);
       border-radius: 28px;
       padding: 24px;
-      margin: 0 auto 20px;
+      margin-bottom: 20px;
       box-shadow: 0 40px 100px rgba(0,0,0,.5);
     }
 
@@ -111,7 +107,6 @@
       font-size: 14px;
       line-height: 1.6;
       opacity: .9;
-      text-align: center;
     }
 
     iframe {
@@ -128,6 +123,7 @@
       border-radius: 16px;
       background: rgba(255,255,255,0.18);
       border: 1px solid rgba(255,255,255,0.3);
+      margin-top: 14px;
       text-align: center;
     }
 
@@ -138,7 +134,7 @@
       margin-top: 20px;
     }
 
-    /* ===== DESKTOP: 3 COLUMNS CENTERED ===== */
+    /* ===== DESKTOP: 3 COLUMNS (VIDEO BIG) ===== */
 
     @media (min-width: 1100px) {
 
@@ -146,36 +142,28 @@
         display: grid;
         grid-template-columns: 1fr 1.4fr 1.8fr;
         gap: 32px;
-        align-items: start;
-      }
-
-      .left,
-      .center,
-      .right {
-        display: flex;
-        justify-content: center;
+        align-items: flex-start;
       }
 
       .left .card,
-      .center .card,
       .right .card {
-        width: 100%;
-        max-width: 420px;
+        position: sticky;
+        top: 32px;
       }
 
-      .right .card {
-        max-width: 520px;
+      .profile {
+        text-align: left;
       }
 
-      .profile,
-      .bio {
-        text-align: center;
+      .avatar {
+        margin-left: 0;
       }
 
       .menu {
-        justify-content: center;
+        justify-content: flex-start;
       }
 
+      /* BIG YOUTUBE PLAYER */
       .video-card iframe {
         height: 380px;
       }
@@ -200,7 +188,7 @@
           <nav class="menu">
             <a href="https://www.youtube.com/@angelhell468" target="_blank">▶ YouTube</a>
             <a href="https://open.spotify.com/artist/0hG8pPiP4ElwWkMAY2V5rD" target="_blank">🎧 Spotify</a>
-            <a href="https://instagram.com/ange1hell" target="_blank">📸 Instagram</a>
+            <a href="https://instagram.com/angelhell" target="_blank">📸 Instagram</a>
           </nav>
 
           <div class="bio">
