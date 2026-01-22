@@ -33,7 +33,7 @@
 
     .container {
       width: 100%;
-      max-width: 1100px;
+      max-width: 1400px;
       padding: 32px;
     }
 
@@ -41,10 +41,6 @@
 
     .layout {
       display: block;
-    }
-
-    .left, .right {
-      width: 100%;
     }
 
     .card {
@@ -138,24 +134,27 @@
       margin-top: 20px;
     }
 
-    /* ===== DESKTOP VERSION ===== */
+    /* ===== DESKTOP: 3 COLUMNS ===== */
 
-    @media (min-width: 900px) {
+    @media (min-width: 1100px) {
 
       .layout {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1.4fr 1fr;
         gap: 28px;
         align-items: flex-start;
       }
 
-      .left {
-        width: 38%;
-        position: sticky;
-        top: 32px;
+      .left,
+      .center,
+      .right {
+        position: relative;
       }
 
-      .right {
-        width: 62%;
+      .left .card,
+      .right .card {
+        position: sticky;
+        top: 32px;
       }
 
       .profile {
@@ -178,7 +177,7 @@
   <div class="container">
     <div class="layout">
 
-      <!-- LEFT COLUMN -->
+      <!-- LEFT -->
       <div class="left">
         <div class="card profile">
           <div class="avatar">
@@ -195,14 +194,14 @@
 
           <div class="bio">
             Кирилл — независимый артист, начавший путь в 2018 году с каверов и DIY-записей.
-            После первых заметных релизов проект перешёл в новую фазу под именем
+            После первых релизов проект перешёл в новую фазу под именем
             <b>ANGEL HELL</b>.
           </div>
         </div>
       </div>
 
-      <!-- RIGHT COLUMN -->
-      <div class="right">
+      <!-- CENTER -->
+      <div class="center">
         <div class="card">
           <strong>Featured Release — MMM</strong><br><br>
           <iframe src="https://music.yandex.ru/iframe/#album/37820609" height="180"></iframe>
@@ -217,6 +216,19 @@
           <a href="https://t.me/torqadmin" target="_blank">
             💬 Contact / Booking (Telegram)
           </a>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="right">
+        <div class="card">
+          <strong>Latest Video</strong><br><br>
+          <iframe
+            height="215"
+            src="https://www.youtube.com/embed/Wn7SbPZmAs4"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
         </div>
       </div>
 
